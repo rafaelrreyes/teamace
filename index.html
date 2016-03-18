@@ -1,0 +1,212 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>ACE | Autonomous Candle Extinguishing Robot</title>
+
+    
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  
+<!--<![endif]-->
+
+
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+  
+
+
+    
+    <style>
+      #map-canvas {
+        width: 400px;
+        height: 300px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        
+      <!-- Initialize SDSU MAP -->    
+      function initialize() {
+          
+        var sdsuLatLng = new google.maps.LatLng(32.7775368,-117.0704908);
+          
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: sdsuLatLng,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        
+        var marker = new google.maps.Marker({
+           position: sdsuLatLng,
+           map: map,
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">San Diego State University</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Objective</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Robot</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Engineers</a></li>
+			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Links</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">A.C.E.</h1>
+        <p class="splash-subhead">
+            Autonomous Candle Extinguisher
+        </p>
+		
+        <p>
+            <a href="http://purecss.io" class="pure-button pure-button-primary">Learn More</a>
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center"></h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    Hardware & Chipset
+                </h3>
+                <p>
+                    With the compability of the PIC32, we are able to simulate every necessary function to locate and extinguish the burning candle.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-mobile"></i>
+                    The Playing Field
+                </h3>
+                <p>
+                    The 1st Floor of the Engineering building was used as the Course.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-th-large"></i>
+                    Software and Algorithms
+                </h3>
+                <p>
+                    To be able to navigate the maze walls and optimize use of the sensors, a special algorithm is in place.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-check-square-o"></i>
+                    Success
+                </h3>
+                <p>
+                    Our Robot was able to solve the course and extinguish the fire. <a href="">Click here</a> to view the results!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img class="pure-img-responsive" alt="robot" width="300" src="img/common/robot.gif">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">The Future: Unmanned Firefighting Solutions</h2>
+
+            <p>
+                For many centuries, abrupt fires and emergencies have compromised the lives of helpless victims and valant rescuers such as firefighters. Our goal is to create the solution to serve in place of these heroes. Autonomous is the future of public emergency service.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="content-head is-center">SDSU Senior Design : Electrical and Computer Engineering</h2>
+
+        <div style="display: inline-flex;" class="pure-g">
+
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Send us an email at: josephsvillanueva@gmail.com
+                </br>
+                    Call us at: (619) 549 - 6829
+                </p>
+
+                <h4>About Us</h4>
+                <p>
+                    To learn more about the team of engineers that made this project possible, <a href="">click here</a>.
+                </p>
+            </div>
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <div>
+                <div id="map-canvas" ></div>
+            </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="footer l-box is-center">
+        This website was designed and created by Dan Bernstein - A.C.E. Copyright©
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
