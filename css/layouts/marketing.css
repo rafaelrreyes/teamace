@@ -154,6 +154,14 @@ a.pure-button-primary {
     text-transform: uppercase;
 }
 
+.splash-left {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    position: absolute;
+    top: 0px; left: 0; bottom: 0; right: 0;
+}
+
 /* This is the main heading that appears on the blue section */
 .splash-head {
     font-size: 20px;
