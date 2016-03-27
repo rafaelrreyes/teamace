@@ -29,6 +29,19 @@ label {
     height: auto;
 }
 
+/* 
+ * -- IMAGE STYLES --
+ *
+ */
+
+.circular {
+	width: 300px;
+	height: 390px;
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -131,6 +144,18 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 
+.splash-container-basic {
+    background: #FFFFFF;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
 .splash-container {
     background: #1f8A56;
     z-index: 1;
@@ -140,7 +165,7 @@ a.pure-button-primary {
     height: 88%;
     top: 0;
     left: 0;
-    position: fixed !important;
+    position: absolute;
 }
 
 .splash {
@@ -155,9 +180,9 @@ a.pure-button-primary {
 }
 
 .splash-left {
-    width: 90%;
+    width: 100%;
     height: 60%;
-    margin: auto;
+    margin-top: 5%;
     position: absolute;
     top: 0px; left: 0; bottom: 0; right: 0;
 }
@@ -174,9 +199,46 @@ a.pure-button-primary {
     line-height: 1em;
 }
 
+.pageheadertitle {
+    margin-left: 50px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.inlined {
+    
+    width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.inlined img {
+    margin: auto;
+    padding: 10px;
+    width: 25%;
+}
+
+.inlined h1 {
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+.inlined p {
+    padding: 0px 20px 0px 20px;
+    width: 25%;
+    text-align: left;
+}
+
+.inlined img:hover {
+    transform: scale(1.1);
+}
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: white;
+    color: black;
     letter-spacing: 0.05em;
     opacity: 0.8;
 }
@@ -188,7 +250,7 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 100%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
